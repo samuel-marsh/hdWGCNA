@@ -176,6 +176,9 @@ ConstructNetwork <- function(
     )
   )
 
+  # log commands
+  seurat_obj <- LogSeuratCommand(object = seurat_obj)
+  
   seurat_obj
 
 }
