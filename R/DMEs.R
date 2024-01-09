@@ -90,6 +90,10 @@ FindAllDMEs <- function(
   }
 
   DMEs <- do.call(rbind, DMEs_list)
+
+  #log
+  seurat_obj <- Seurat::LogSeuratCommand(object = seurat_obj)
+  
   DMEs
 }
 
